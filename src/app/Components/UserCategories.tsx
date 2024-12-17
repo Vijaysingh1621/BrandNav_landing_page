@@ -46,10 +46,10 @@ export default function UserCategories() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2A2665] mb-4">
+          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4 text-left sm:text-center">
             Who is using BrandNav?
           </h2>
-          <p className="text-lg text-[#6B7280]">
+          <p className="text-md text-[#6B7280] text-left sm:text-center">
             BrandNav has become irreplaceable tool for businesses
           </p>
         </div>

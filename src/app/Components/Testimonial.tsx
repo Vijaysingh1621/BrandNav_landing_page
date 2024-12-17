@@ -44,7 +44,7 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-6">
+          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-6 text-left sm:text-center">
             Don't just take our word for it
           </h2>
           <div className="flex items-center justify-center gap-4 font-semibold">

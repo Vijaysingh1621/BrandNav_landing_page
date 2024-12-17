@@ -23,10 +23,10 @@ export default function FeatureSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4">
+          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4 text-left sm:text-center">
             Why should you use BrandNav?
           </h2>
-          <p className="text-md text-[#6B7280] max-w-2xl mx-auto">
+          <p className="text-md text-[#6B7280] max-w-2xl mx-auto text-left sm:text-center">
             Optimize your workflow for faster results and higher revenue
           </p>
         </div>

@@ -54,7 +54,7 @@ export default function FAQSection() {
           {faqs.map((faq, index) => (
             <div key={index} className="border-b last:border-b-0">
               <button
-                className="w-full text-left py-4 px-4 focus:outline-none"
+                className="w-full text-left py-3 px-3 focus:outline-none"
                 onClick={() => toggleAccordion(index)}
               >
                 <div className="flex justify-between items-center">

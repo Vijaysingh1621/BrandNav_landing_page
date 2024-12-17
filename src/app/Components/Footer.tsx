@@ -1,9 +1,15 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Github } from "lucide-react"
+import banner from "../../../public/footer_banner_section.svg"
+import Image from "next/image"
 
 export default function Footer() {
   return (
     <footer className="bg-[#F8F9FF] py-16 px-4">
+        <div className="flex justify-center items-center mb-12">
+            <Image src={banner} alt=""/>
+            
+        </div>
       <div className="container mx-auto">
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">

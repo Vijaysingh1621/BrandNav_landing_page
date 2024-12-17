@@ -34,7 +34,7 @@ export default function DataAttributes() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4 max-w-2xl mx-auto text-left sm:text-center">
             Pinpoint your ideal customer with relevant data attributes
           </h2>
         </div>
