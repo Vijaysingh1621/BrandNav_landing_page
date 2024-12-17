@@ -1,5 +1,9 @@
 import leftSideImage from "../../../public/third-section-image-left.svg"
 import rightSideImage from "../../../public/third-section-image-right.svg"
+import card1 from "../../../public/card 1.png"
+import card2 from "../../../public/card 2.png"
+import card3 from "../../../public/card 3.png"
+import card4 from "../../../public/card 5.png"
 import React from 'react'
 import Image from "next/image"
 
@@ -22,6 +26,7 @@ export default function ChooseYourOwn() {
           <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="h-48 mb-6 flex items-center justify-center">
               {/* Placeholder for image */}
+              <Image src={card2} alt="" height={400} width={400}/>
               <div className="w-full h-full rounded-lg bg-gray-50" />
             </div>
             <h3 className="text-xl font-semibold text-[#0D2052] mb-2">
@@ -36,6 +41,7 @@ export default function ChooseYourOwn() {
           <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="h-48 mb-6 flex items-center justify-center">
               {/* Placeholder for image */}
+              <Image src={card2} alt="" height={400} width={400}/>
               <div className="w-full h-full rounded-lg bg-gray-50" />
             </div>
             <h3 className="text-xl font-semibold text-[#0D2052] mb-2">
@@ -50,6 +56,7 @@ export default function ChooseYourOwn() {
           <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="h-48 mb-6 flex items-center justify-center">
               {/* Placeholder for image */}
+              <Image src={card3} alt="" height={400} width={400}/>
               <div className="w-full h-full rounded-lg bg-gray-50" />
             </div>
             <h3 className="text-xl font-semibold text-[#0D2052] mb-2">
@@ -64,6 +71,7 @@ export default function ChooseYourOwn() {
           <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="h-48 mb-6 flex items-center justify-center">
               {/* Placeholder for image */}
+              <Image src={card4} alt="" height={400} width={400}/>
               <div className="w-full h-full rounded-lg bg-gray-50" />
             </div>
             <h3 className="text-xl font-semibold text-[#0D2052] mb-2">

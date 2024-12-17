@@ -9,11 +9,15 @@ import brand2 from "../../../public/acexmedia-new.svg"
 import brand3 from "../../../public/outreach-clerk-new.svg"
 import brand4 from "../../../public/og-new.svg"
 import brand5 from "../../../public/xlr-media-new.svg"
+import bgline from "../../../public/bgline.svg"
 import Image from "next/image"
 
 export function Hero() {
     return (
-      <div className="relative pt-10 bg-[#F8F7FF]  min-h-[80vh] flex flex-col items-center justify-center text-center px-4 py-16">
+      <div className="relative pt-10 bg-blue-50 min-h-[80vh] flex flex-col items-center justify-center text-center px-4 py-16" 
+      style={{
+        backgroundImage: `url(${bgline.src})`, // i used this bg but it is giving white shadows and black bg so didnt use took from figma 
+      }} >
        <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4rem] lg:text-[56px] font-[540] leading-tight text-[#0D2052] max-w-4xl mx-auto mb-6 text-left sm:text-center">
         Weapons to grow<br />
         your Business
