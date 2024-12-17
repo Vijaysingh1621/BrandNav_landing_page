@@ -1,11 +1,14 @@
+import leftSideImage from "../../../public/third-section-image-left.svg"
+import rightSideImage from "../../../public/third-section-image-right.svg"
 import React from 'react'
+import Image from "next/image"
 
 export default function ChooseYourOwn() {
   return (
-    <div className='bg-blue-50'>
+    <div className='bg-blue-50 lg:px-[140px] px-2'>
        <section className=" py-16 px-4 max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="lg:text-center mb-16 md:text-center text-left">
           <h2 className="text-[40px] font-bold text-[#0D2052] mb-4">
             Choose Your Weapon
           </h2>
@@ -13,9 +16,8 @@ export default function ChooseYourOwn() {
             BrandNav is a multi-dimensional platform designed for revenue growth
           </p>
         </div>
-  
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 mb-24 bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           {/* Screener Search */}
           <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="h-48 mb-6 flex items-center justify-center">
@@ -74,19 +76,20 @@ export default function ChooseYourOwn() {
         </div>
   
         {/* Bottom Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow mt-[-100px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl font-bold text-[#0D2052] mb-4">
               The ultimate eCom leads database
             </h2>
             <p className="text-gray-600 mb-8">
-              Discover untapped eCommerce brands with our high-quality unsaturated leads database.
+            Get powerful insights of 99.99% eCommerce and DTC brands that can help you build your ideal prospect list.
             </p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-[#0066FF] text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
                 Try for free
               </button>
-              <button className="text-[#0066FF] hover:text-blue-700 flex items-center gap-2">
+              <button className="text-[#0066FF] hover:text-blue-700 flex items-center gap-2 font-medium">
                 Learn more
                 <svg
                   width="16"
@@ -114,8 +117,26 @@ export default function ChooseYourOwn() {
               </button>
             </div>
           </div>
-          <div className="h-[400px] bg-gray-50 rounded-2xl">
-            {/* Placeholder for right side image/illustration */}
+          <div className="h-[400px] bg-gray-50 rounded-2xl flex flex-row md:flex-row items-center justify-center gap-4 p-4">
+              {/* Left Side Image */}
+              <Image
+                src={leftSideImage}
+                height={229}
+                width={136}
+                alt="Left_image"
+                className="w-[120px] sm:w-[136px] md:w-[156px] lg:w-[180px] h-auto"
+              />
+
+              {/* Right Side Image */}
+              <Image
+                src={rightSideImage}
+                height={156}
+                width={136}
+                alt="Right_image"
+                className="w-[120px] sm:w-[136px] md:w-[156px] lg:w-[180px] h-auto"
+              />
+            </div>
+
           </div>
         </div>
       </section>

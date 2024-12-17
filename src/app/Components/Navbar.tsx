@@ -36,7 +36,7 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:absolute md:left-[30rem] md:transform md:-translate-x-1/2">
-          <div className="flex items-center space-x-[40px] text-[13px]">
+          <div className="flex items-center space-x-[40px] text-[15px]">
             <div className="relative">
               <button
                 onClick={() => setProductsOpen(!productsOpen)}
