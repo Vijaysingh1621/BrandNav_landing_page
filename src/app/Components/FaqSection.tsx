@@ -65,7 +65,7 @@ export default function FAQSection() {
                 </div>
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-6 text-gray-600">
+                <div className="px-[80px] pb-6 text-gray-600">
                   {faq.answer}
                 </div>
               )}
