@@ -9,43 +9,46 @@ import Ratings from "../../../public/rating-star.svg";
 export default function Footer() {
   return (
     <footer className="bg-[#F8F9FF] py-16 px-4">
-      <div className="flex justify-center items-center w-auto lg:ml-[130px] md:ml-0 ">
-        <div className=" flex justify-center items-center mb-12 px-[30px] rounded-lg hidden lg:flex md:flex h-[400px] w-full" style={{
-        backgroundImage: `url(${bannerFotter.src})`,backgroundRepeat:"no-repeat",
-      }}>
-          <div className="text-center justify-center items-center mb-16 mr-10 mt-10">
-          <h2 className="text-2xl   md:text-[40px] font-bold text-white mb-4 mr-10 max-w-2xl  ">
-          Want to see BrandNav in action?
-          </h2>
-          <h3 className="text-xl   md:text-[20px] font-bold text-white mb-4  max-w-2xl  ">
-          Try BrandNav for free today!
-          </h3>
-               
-                 
-            <div className="flex flex-col justify-center items-center space-y-6 pb-10 lg:ml-0 md:ml-0">
-              <button className="bg-[#007bff] text-white px-6 py-2 rounded-lg w-full lg:w-[200px] hover:bg-blue-600 transition-colors mb-4">
+      <div className="flex justify-center items-center w-full px-4 hidden lg:flex md:flex">
+  <div className="flex flex-col justify-center items-center h-[400px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg"
+            style={{
+              backgroundImage: `url(${bannerFotter.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            {/* Text Section */}
+            <div className="text-center">
+              <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 max-w-2xl leading-tight">
+                Want to see BrandNav in action?
+              </h2>
+              <h3 className="text-lg md:text-xl text-white mb-6">
+                Try BrandNav for free today!
+              </h3>
+            </div>
+
+            {/* Button and Footer Section */}
+            <div className="flex flex-col items-center space-y-4">
+              <button className="bg-[#007bff] hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg w-full md:w-auto transition-all">
                 Grab free leads
               </button>
 
-              
-              <div className="flex items-center justify-center gap-2 text-[13px] text-white">
-                <div className="flex items-center gap-2">
-                  <Image src={CreditCard} alt="card" />
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-white text-sm">
+                <div className="flex items-center gap-2 text-[12px]">
+                  <Image src={CreditCard} alt="card" className="h-4 w-4" />
                   No credit card required
                 </div>
-                <span>|</span>
-                <div className="flex items-center">
-                  <Image src={Ratings} alt="rating" />
-                  <span className="ml-1">4.8/5 G2 Rating</span>
+                <span className="hidden md:block">|</span>
+                <div className="flex items-center gap-1">
+                  <Image src={Ratings} alt="rating" className="h-4 w-[100px]" />
+                  <span>4.8/5 G2 Ratings</span>
                 </div>
               </div>
             </div>
           </div>
-          
-          
-            
         </div>
-        </div>
+
       <div className="container mx-auto">
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
