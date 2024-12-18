@@ -23,10 +23,10 @@ export default function FeatureSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4 text-left sm:text-center">
+          <h2 className="text-2xl md:text-[28px] font-bold text-[#2A2665] mb-2  max-w-2xl mx-auto text-left sm:text-center">
             Why should you use BrandNav?
           </h2>
-          <p className="text-md text-[#6B7280] max-w-2xl mx-auto text-left sm:text-center">
+          <p className="text-[15px] lg:text-md md:text-md text-[#6B7280] max-w-2xl mx-auto text-left sm:text-center">
             Optimize your workflow for faster results and higher revenue
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function FeatureSection() {
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-[#2A2665]">Enrich any CSV</h3>
-            <p className="text-[#6B7280] leading-relaxed">
+            <p className="text-[#6B7280] leading-relaxed text-[16px]">
               BrandNav transforms your CSV files by adding valuable contact,
               firmographics, and technographics data. With just a few clicks,
               you can enhance your data with enriched information and unlock new
@@ -105,7 +105,7 @@ export default function FeatureSection() {
             <h3 className="text-2xl font-bold text-[#2A2665]">
               Fresh data updates everyday
             </h3>
-            <p className="text-[#6B7280] leading-relaxed">
+            <p className="text-[#6B7280] leading-relaxed text-[16px]">
               BrandNav updates its data every day, providing the most recent and
               accurate information to its users. With a constant stream of new
               information, BrandNav ensures that users have access to the latest
@@ -148,7 +148,7 @@ export default function FeatureSection() {
                   alt="Fresh Data Updates Interface"
                   height={200}
                   width={200}
-                  className="rounded-lg absolute right-[100px] top-[150px] w-[100px] h-[100px] lg:h-[160px] lg:w-[160px]"
+                  className="rounded-lg absolute right-[100px] top-[150px] w-[150px] h-[150px] lg:h-[160px] lg:w-[160px]"
                 />
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function FeatureSection() {
               <Image src={filter} alt=""/>
             </div>
             <h3 className="text-2xl font-bold text-[#2A2665]">Advanced search with 25+ unique filters</h3>
-            <p className="text-[#6B7280] leading-relaxed">
+            <p className="text-[#6B7280] leading-relaxed text-[16px]">
             BrandNav offers over 25+ filters to help users build highly segmented lists for better prospecting. With BrandNav, you can create highly targeted lists that are tailored to your specific needs, streamlining your workflow and maximizing your productivity.
             </p>
             {/* Pricing */}

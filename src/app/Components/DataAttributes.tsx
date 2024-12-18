@@ -34,14 +34,14 @@ export default function DataAttributes() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4 max-w-2xl mx-auto text-left sm:text-center">
+          <h2 className="text-2xl md:text-[28px] font-bold text-[#2A2665] mb-2  max-w-2xl mx-auto text-left sm:text-center">
             Pinpoint your ideal customer with relevant data attributes
           </h2>
         </div>
 
         {/* Screener Attributes */}
         <div className="mb-16">
-          <h3 className="text-center text-2xl text-[#007bff] font-semibold mb-12">
+          <h3 className=" lg:text-[22px] md:text-[22px] text-[18px] text-[#007bff] font-semibold text-left sm:text-center mb-12">
             Screener attributes
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
@@ -72,7 +72,7 @@ export default function DataAttributes() {
 
         {/* Enricher Attributes */}
         <div>
-          <h3 className="text-center text-2xl text-[#007bff] font-semibold mb-12">
+          <h3 className=" lg:text-[22px] md:text-[22px] text-[18px] text-[#007bff] text-left sm:text-center font-semibold mb-12">
             Enricher attributes
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">

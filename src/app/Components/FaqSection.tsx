@@ -37,14 +37,14 @@ export default function FAQSection() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F7FF] py-16 px-4">
+    <div className="min-h-screen bg-[#EFF2F7] py-16 px-4">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-4">
+        <div className="text-2xl w-[60%]  md:text-[28px] font-bold text-[#2A2665] lg:mb-2 mb-8  max-w-2xl lg:mx-auto text-left sm:text-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-[#2A2665] mb-2">
             Got a Question?
           </h2>
-          <p className="text-3xl md:text-3xl font-bold text-[#2A2665]">
+          <p className="text-2xl md:text-3xl font-bold text-[#2A2665] mb-10">
             Get Your Answers
           </p>
         </div>

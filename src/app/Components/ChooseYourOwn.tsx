@@ -13,10 +13,10 @@ export default function ChooseYourOwn() {
        <section className=" py-16 px-4 max-w-7xl mx-auto">
         {/* Header */}
         <div className="lg:text-center mb-16 md:text-center text-left">
-          <h2 className="text-[40px] font-bold text-[#0D2052] mb-4">
+          <h2 className="text-2xl   md:text-[28px] font-bold text-[#2A2665] mb-2  max-w-2xl lg:mx-auto text-left sm:text-center">
             Choose Your Weapon
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 lg:text-lg md:text-lg text-[16px]">
             BrandNav is a multi-dimensional platform designed for revenue growth
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function ChooseYourOwn() {
               </button>
             </div>
           </div>
-          <div className="h-[400px] bg-gray-50 rounded-2xl flex flex-row md:flex-row items-center justify-center gap-4 p-4">
+          <div className="h-[400px] bg-gray-50 rounded-2xl flex flex-row md:flex-row items-center justify-center gap-4 p-4 hidden lg:flex md:flex ">
               {/* Left Side Image */}
               <Image
                 src={leftSideImage}

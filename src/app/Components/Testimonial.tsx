@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Star } from 'lucide-react'
 import image1 from "../../../public/image1.jpg"
 import image2 from "../../../public/image2.jpg"
+import ratings from "../../../public/stars_4.8.svg"
 
 interface TestimonialProps {
   name: string
@@ -40,17 +41,17 @@ const testimonials: TestimonialProps[] = [
 
 export default function Testimonials() {
   return (
-    <div className="min-h-screen bg-blue-50 py-16 px-4">
+    <div className="min-h-screen bg-[#E1F1FE] py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold text-[#2A2665] mb-6 text-left sm:text-center">
+          <h2 className="text-2xl w-[60%]  md:text-[28px] font-bold text-[#2A2665] mb-2  max-w-2xl lg:mx-auto text-left sm:text-center">
             Don't just take our word for it
           </h2>
-          <div className="flex items-center justify-center gap-4 font-semibold">
-            <span className="text-[#2A2665] text-xl ">Excellent</span>
-            <StarRating />
-            <span className="text-[#2A2665] text-xl">4.8/5 G2 Ratings</span>
+          <div className="flex items-center justify-center gap-4 font-semibold ml-[-95px] text-[13px]  lg:ml-0  ">
+            <span className="text-[#2A2665] lg:text-[15px] text-left sm:text-center ">Excellent</span>
+            <Image src={ratings} alt="stars_ratings" className='h-[18px] w-[100px]' />
+            <span className="text-[#2A2665] lg:text-[15px] text-left sm:text-center">4.8/5 G2 Ratings</span>
           </div>
         </div>
 
@@ -58,7 +59,7 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white shadow-lg">
-              <div className="p-8">
+              <div className="py-12 px-8">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex gap-4">
                     <div className="relative w-12 h-12">
@@ -74,13 +75,13 @@ export default function Testimonials() {
                       <p className="text-gray-600 text-sm">{testimonial.role}</p>
                     </div>
                   </div>
-                  <StarRating />
+                  <StarRating/>
                 </div>
                 <div>
-                  <p className="text-[#2A2665] font-semibold text-lg mb-4">
+                  <p className="text-[#2A2665] font-semibold text-[15.6px] mb-4">
                     "{testimonial.quote}"
                   </p>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 text-[14px] leading-relaxed">
                     "{testimonial.content}"
                   </p>
                 </div>

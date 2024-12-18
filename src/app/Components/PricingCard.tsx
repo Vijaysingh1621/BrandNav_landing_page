@@ -1,5 +1,6 @@
 import gift from "../../../public/gift.svg"
 import Ratings from "../../../public/rating-star.svg"
+import singleStar from "../../../public/single-star.svg"
 import CreditCard from "../../../public/credit_card.svg"
 import Banner from "../../../public/banner.png"
 import tick from "../../../public/circle-tick.svg"
@@ -12,11 +13,32 @@ import numbers from "../../../public/10k.svg"
 import Image from "next/image";
 export default function PricingCard() {
     return (
-      <div className="min-h-screen w-full p-4 flex items-center justify-center" 
+
+      
+      <div className="min-h-screen w-full p-0 flex items-center justify-center overflow-x-hidden" 
       style={{
         backgroundImage: `url(${Banner.src})`,
       }} >
+
+          
+
         <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 lg:gap-[80px] gap-8 px-8 items-center lg:px-[200px] ">
+
+          {/* left Side Text */}
+          <div className="text-white flex-col flex lg:hidden md:hidden justify-center items-center lg:mr-[-70px] md:mr-[-70px] mr-[0px] mt-5 ">
+            <h2 className="text-3xl text-[25px] md:text-[30px] lg:text-[30px] font-semibold mb-2 text-center">
+              Not convinced yet?
+            </h2>
+            <p className="text-4xl text-[27px] md:text-[35px] lg::text-[30px] font-semibold text-center w-full ">
+              Take it for a{" "}
+              <span className="text-[#007bff] mb-6">FREE</span> spin
+              
+            </p>
+            <h2 className="text-3xl text-[25px] md:text-[30px] lg::text-[30px] text-center font-semibold mt-2 mb-[-20px]">
+            before committing
+            </h2>
+          </div>
+
           {/* Pricing Card */}
           <div className="bg-white rounded-3xl p-8 mt-10 mb-10 shadow-xl  w-auto h-auto w-[363px] h-[625px] pb-[-150px]">
             <div className="flex flex-col items-center text-center">
@@ -32,12 +54,12 @@ export default function PricingCard() {
               <div className="text-4xl font-bold text-[#1a237e] mb-4">$0</div>
   
               {/* CTA Button */}
-              <button className="bg-[#007bff] text-white px-6 py-2 rounded-lg w-full hover:bg-blue-600 transition-colors mb-4">
+              <button className="bg-[#007bff] w-full py-2 md:px-8 md:py-2 text-white lg:px-8 lg:py-2  rounded-lg hover:bg-blue-600 transition-colors mb-5">
                 Grab free leads
               </button>
   
               {/* Rating */}
-              <div className="flex items-center justify-center gap-2 text-[9px] text-gray-600 lg:flex md:flex">
+              <div className="flex items-center justify-center gap-2 text-[.68rem] font-medium text-gray-600 mb-2 lg:flex md:flex">
                     <div className="flex items-center gap-2">
                       <Image src={CreditCard} alt="card"/>
                           
@@ -46,14 +68,14 @@ export default function PricingCard() {
                     <span>|</span>
                     <div className="flex items-center ">
 
-                    <Image src={Ratings} alt="card"/>
+                    <Image src={singleStar} alt="card"/>
                     <span className="ml-1">4.8/5 G2 Rating</span> 
                     </div>
                   
 
                 </div>
               {/* Features List */}
-              <div className="space-y-4 text-left w-full mt-5">
+              <div className="space-y-4 text-left text-[14px] font-medium w-full mt-5">
                 <div className="flex items-center gap-2">
                   <Image src={tick} alt="tick" />
                   <span className="text-gray-700">All BrandNav features included</span>
@@ -105,16 +127,18 @@ export default function PricingCard() {
           </div>
   
           {/* Right Side Text */}
-          <div className="text-white text-center md:text-left">
-            <h2 className="text-3xl md:text-[30px] font-bold mb-6">
+          <div className="text-white flex-col hidden lg:flex md:flex  justify-center items-center lg:mr-[-70px] md:mr-[-70px] mr-[0px] ">
+            <h2 className="text-3xl text-[25px] md:text-[30px] lg:text-[30px] font-semibold mb-4 text-center">
               Not convinced yet?
             </h2>
-            <p className="text-4xl md:text-4xl font-semibold">
+            <p className="text-4xl text-[26px] md:text-[35px] lg::text-[30px] font-semibold w-full ">
               Take it for a{" "}
               <span className="text-[#007bff] mb-6">FREE</span> spin
-              <br />
-              <span className="text-3xl mt-10">before committing</span>
+              
             </p>
+            <h2 className="text-3xl text-[25px] md:text-[30px] lg::text-[30px] text-center font-semibold mt-4">
+            before committing
+            </h2>
           </div>
         </div>
       </div>

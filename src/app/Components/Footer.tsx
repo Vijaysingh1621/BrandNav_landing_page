@@ -2,13 +2,49 @@ import Link from "next/link"
 import { Facebook, Twitter, Instagram, Github } from "lucide-react"
 import banner from "../../../public/footer_banner_section.svg"
 import Image from "next/image"
+import bannerFotter from "../../../public/banner_svg.svg"
+import CreditCard from "../../../public/credit_card.svg";
+import Ratings from "../../../public/rating-star.svg";
 
 export default function Footer() {
   return (
     <footer className="bg-[#F8F9FF] py-16 px-4">
-        <div className="flex justify-center items-center mb-12">
-            <Image src={banner} alt=""/>
+      <div className="flex justify-center items-center w-auto lg:ml-[130px] md:ml-0 ">
+        <div className=" flex justify-center items-center mb-12 px-[30px] rounded-lg hidden lg:flex md:flex h-[400px] w-full" style={{
+        backgroundImage: `url(${bannerFotter.src})`,backgroundRepeat:"no-repeat",
+      }}>
+          <div className="text-center justify-center items-center mb-16 mr-10 mt-10">
+          <h2 className="text-2xl   md:text-[40px] font-bold text-white mb-4 mr-10 max-w-2xl  ">
+          Want to see BrandNav in action?
+          </h2>
+          <h3 className="text-xl   md:text-[20px] font-bold text-white mb-4  max-w-2xl  ">
+          Try BrandNav for free today!
+          </h3>
+               
+                 
+            <div className="flex flex-col justify-center items-center space-y-6 pb-10 lg:ml-0 md:ml-0">
+              <button className="bg-[#007bff] text-white px-6 py-2 rounded-lg w-full lg:w-[200px] hover:bg-blue-600 transition-colors mb-4">
+                Grab free leads
+              </button>
+
+              
+              <div className="flex items-center justify-center gap-2 text-[13px] text-white">
+                <div className="flex items-center gap-2">
+                  <Image src={CreditCard} alt="card" />
+                  No credit card required
+                </div>
+                <span>|</span>
+                <div className="flex items-center">
+                  <Image src={Ratings} alt="rating" />
+                  <span className="ml-1">4.8/5 G2 Rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
             
+        </div>
         </div>
       <div className="container mx-auto">
         {/* Responsive Grid */}
