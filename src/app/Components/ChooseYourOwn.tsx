@@ -125,7 +125,7 @@ export default function ChooseYourOwn() {
               </button>
             </div>
           </div>
-          <div className="h-[400px] bg-gray-50 rounded-2xl flex flex-row md:flex-row items-center justify-center gap-4 p-4 hidden lg:flex md:flex ">
+          <div className="h-[400px] bg-gray-50 rounded-2xl  flex-row md:flex-row items-center justify-center gap-4 p-4 hidden lg:flex md:flex ">
               {/* Left Side Image */}
               <Image
                 src={leftSideImage}

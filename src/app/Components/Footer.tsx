@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-[#F8F9FF] py-16 lg:px-4 pl-0">
       <div className="flex justify-center items-center flex-col w-full px-4 ">
   <div
-    className="flex flex-col justify-center items-center h-[400px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg hidden lg:flex md:flex"
+    className=" flex-col justify-center items-center h-[400px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg hidden lg:flex md:flex"
     style={{
       backgroundImage: `url(${bannerFotter.src})`,
       backgroundRepeat: "no-repeat",
